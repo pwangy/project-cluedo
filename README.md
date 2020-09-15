@@ -1,13 +1,22 @@
-# Cluedo - Mystery Randomizer
+# Cluedo Mystery Randomizer - Overview
+Project done as a part of Technigo bootcamp. 
 
-Replace this readme with your own information about your project.
+Learning objectives:
+1. Create and manipulate objects
+2. Create arrays
+3. More about manipulating the DOM using Javascript
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+# Brief
+This week’s project is to create a piece of the classic board game Cluedo. 
+You'll practice creating objects and arrays and also connect this to the DOM.
 
-## The problem
+The user (who is the game leader and the one that will know all about the murder) should be able to click on three decks of cards, to randomly get a character, a weapon and a room. Then there should also be a button to "reveal" the mystery.
 
+The focus on this project is to practice objects and arrays and also to manipulate the DOM with JavaScript.
+
+## Approach
 Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
 
-## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+## See it live
+Link to come.
