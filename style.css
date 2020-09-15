@@ -9,6 +9,10 @@ p {
   background-color: #fff;
 }
 
+article:hover {
+  cursor: pointer;
+}
+
 .cards {
   margin: 50px auto;
   width: 90%;

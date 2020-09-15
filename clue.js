@@ -1,4 +1,6 @@
+// Suspects
 const mrGreen = {
+  title: 'Mr. Green',
   firstName: 'John',
   lastName: 'Green',
   color: 'green',
@@ -10,6 +12,7 @@ const mrGreen = {
 };
 
 const profPlum = {
+  title: 'Professor Plum',
   firstName: 'Peter',
   lastName: 'Plum',
   color: 'purple',
@@ -21,6 +24,7 @@ const profPlum = {
 };
 
 const missScarlett = {
+  title: 'Miss Scarlett',
   firstName: 'Josephine',
   lastName: 'Scarlett',
   color: 'red',
@@ -32,6 +36,7 @@ const missScarlett = {
 };
 
 const mrsPeacock = {
+  title: 'Mrs. Peacock',
   firstName: 'Patricia',
   lastName: 'Peacock',
   color: 'blue',
@@ -43,6 +48,7 @@ const mrsPeacock = {
 };
 
 const colMustard = {
+  title: 'Colonel Mustard',
   firstName: 'Michael',
   lastName: 'Mustard',
   color: 'yellow',
@@ -54,6 +60,7 @@ const colMustard = {
 };
 
 const mrsWhite = {
+  title: 'Mrs. White',
   firstName: 'Blanche',
   lastName: 'White',
   color: 'white',
@@ -64,94 +71,264 @@ const mrsWhite = {
   favoriteWeapon: 'candlestick'
 };
 
+// Weapons
 const rope = {
   name: 'Rope',
-  weight: 10,
   id: 'rope',
-  description: 'Who could have tied such a strong knot?'
+  description: 'Who could have tied such a strong knot?',
+  // image: 'assets/'
 };
 
 const knife = {
   name: 'Knife',
-  weight: 10,
   id: 'knife',
-  description: 'The steel is shining as though it was recently cleaned...'
+  description: 'The steel is shining as though it was recently cleaned...',
+  // image: 'assets/'
 };
 
 const candlestick = {
   name: 'Candlestick',
   id: 'candlestick',
-  description: 'Very solid brass and very, very blunt.'
+  description: 'Very solid brass and very, very blunt.',
+  // image: 'assets/'
 };
 
 const leadPipe = {
   name: 'Lead Pipe',
   id: 'lead pipe',
-  description: 'Who could have struck such a blow?'
+  description: 'Who could have struck such a blow?',
+  // image: 'assets/'
 };
 
 const poison = {
   name: 'Poison',
   id: 'poison',
-  description: 'Who broke the wax seal on the vial?'
+  description: 'Who broke the wax seal on the vial?',
+  // image: 'assets/'
 };
 
 const horseshoe = {
   name: 'Horseshoe',
   id: 'horseshoe',
-  description: 'What suspect brings his own horses to the country?'
+  description: 'What suspect brings his own horses to the country?',
+  // image: 'assets/'
 };
 
 const hatPin = {
   name: 'Hat Pin',
   id: 'hatPin',
-  description: 'Small, sharp, and discreet.'
+  description: 'Small, sharp, and discreet.',
+  // image: 'assets/'
 };
 
 const wrench = {
   name: 'Wrench',
   id: 'wrench',
-  description: 'Whose fingerprints are on the grip?'
+  description: 'Whose fingerprints are on the grip?',
+  // image: 'assets/'
 };
 
 const revolver = {
   name: 'Revolver',
   id: 'revolver',
-  description: 'The mechanism seems well-oiled...'
+  description: 'The mechanism seems well-oiled...',
+  // image: 'assets/'
 };
 
+// Rooms
+const hall = {
+  name: 'Hall',
+  id: 'hall',
+  // image: 'assets/'
+};
+const lounge = {
+  name: 'Lounge',
+  id: 'lounge',
+  // image: 'assets/'
+};
+const diningRoom = {
+  name: 'Dining Room',
+  id: 'diningRoom',
+  // image: 'assets/'
+};
+const kitchen = {
+  name: 'Kitchen',
+  id: 'kitchen',
+  // image: 'assets/'
+};
+const ballroom = {
+  name: 'Ballroom',
+  id: 'ballroom',
+  // image: 'assets/'
+};
+const conservatory = {
+  name: 'Conservatory',
+  id: 'conservatory',
+  // image: 'assets/'
+};
+const billiardRoom = {
+  name: 'Billiard Room',
+  id: 'billiardRoom',
+  // image: 'assets/'
+};
+const library = {
+  name: 'Library',
+  id: 'library',
+  // image: 'assets/'
+};
+const study = {
+  name: 'Study',
+  id: 'study',
+  // image: 'assets/'
+};
+const spa = {
+  name: 'Spa',
+  id: 'spa',
+  // image: 'assets/'
+};
+const observatory = {
+  name: 'Observatory',
+  id: 'observatory',
+  // image: 'assets/'
+};
+const stables = {
+  name: 'Stables',
+  id: 'stables',
+  // image: 'assets/'
+};
+const guestHouse = {
+  name: 'Guest House',
+  id: 'guestHouse',
+  // image: 'assets/'
+};
+const trophyRoom = {
+  name: 'Trophy Room',
+  id: 'trophyRoom',
+  // image: 'assets/'
+};
+const carriageHouse = {
+  name: 'Carriage House',
+  id: 'carriageHouse',
+  // image: 'assets/'
+};
+
+// Arrays for suspects, weapons, and rooms.
 const suspects = [mrGreen, profPlum, missScarlett, mrsPeacock, colMustard, mrsWhite];
 
 const weapons = [rope, knife, candlestick, leadPipe, poison, horseshoe, hatPin, wrench, revolver];
 
-const rooms = [Gazebo, Conservatory,  Kitchen, Study, Library, Fountain, Lounge, Ballroom, Hall, Spa, Stables, Observatory, Theater, Garage, Patio];
+const rooms = [hall, lounge, diningRoom, kitchen, ballroom, conservatory, billiardRoom, library, study, spa, observatory, stables, guestHouse, trophyRoom, carriageHouse];
+
+// Testing
+// console.log(profPlum.description);
+// console.log(poison.description);
+// console.log(knife.description);
+
+// suspects.forEach((person) => {
+//   console.log(`${person.firstName} ${person.lastName} has the color ${person.color}.`);
+// });
+
+// weapons.forEach((weapon) => {
+//   console.log(`${weapon.name} : ${weapon.description}`);
+// });
+
+// rooms.forEach((room) => {
+//    console.log(`${room.name}`);
+// });              
+               
 
 // THIS FUNCTION WILL RANDOMLY SELECT ONE ITEM FROM THE ARRAY THAT YOU PASS IN TO THE FUNCTION.
 // YOU DON'T NEED TO CHANGE THIS, JUST TRY TO UNDERSTAND IT. AND HOW TO USE IT.
 const randomSelector = array => {
   return array[Math.floor(Math.random() * array.length)]
-}
+};
 
 // CREATE AN OBJECT THAT KEEPS THE MYSTERY.
-// With a killer, a weapon and a room.
 // The values will be set later.
 
-const mystery = `${suspects} ${weapons} ${rooms}`;
+const mystery = {
+  killer: pickKiller,
+  weapon: pickWeapon,
+  room: pickRoom
+};
 
-// This function will be invoked when you click on the killer card.
+// Clicking a card from each deck will draw a card
 const pickKiller = () => {
-  // This will randomly select a killer from the suspects. And add that to the mystery object.
   mystery.killer = randomSelector(suspects)
-}
+};
 
-  // This will change the background color of the card to the one connected to the chosen killer and show the full name of the killer. Feel free to add more things to show about the killer.
-  document.getElementById('killerCard').style.background = mystery.killer.color
-  
-  document.getElementById(
+const pickWeapon = () => {
+  mystery.weapon = randomSelector(weapons)
+};
+
+const pickRoom = () => {
+  mystery.room = randomSelector(rooms)
+};
+
+
+
+// Killer Card Display
+// document.getElementById(
+//     'killerImg'
+//   ).innerHTML = `${mystery.killer.image}`;
+
+document.getElementById('killerCard').style.background = mystery.killer.color;
+
+document.getElementById(
+    'killerTitle'
+  ).innerHTML = `${mystery.killer.title}`;
+
+document.getElementById(
     'killerName'
-  ).innerHTML = `${mystery.killer.firstName} ${mystery.killer.lastName}`
+  ).innerHTML = `AKA: ${mystery.killer.firstName} ${mystery.killer.lastName}`;
 
-// CREATE FUNCTIONS pickWeapon and pickRoom in a similar way.
+document.getElementById(
+    'killerAge'
+  ).innerHTML = `Age: ${mystery.killer.age}`;
+
+document.getElementById(
+    'killerOccupation'
+  ).innerHTML = `Occupation: ${mystery.killer.occupation}`;
+
+document.getElementById(
+    'killerFavWeapon'
+  ).innerHTML = `Favourite Weapon: ${mystery.killer.favoriteWeapon}`;
+
+document.getElementById(
+    'killerDescription'
+  ).innerHTML = `${mystery.killer.description}`;
+
+
+// Weapon
+// document.getElementById(
+//     'weaponImg'
+//   ).innerHTML = `${mystery.killer.image}`;
+
+document.getElementById(
+    'weaponName'
+  ).innerHTML = `${mystery.weapon.name}`
+
+document.getElementById(
+    'weaponDescription'
+  ).innerHTML = `${mystery.weapon.description}`
+
+// Room
+// document.getElementById(
+//     'roomImg'
+//   ).innerHTML = `${mystery.room.image}`;
+
+document.getElementById(
+    'roomName'
+  ).innerHTML = `${mystery.room.name}`
 
 // STEP 4 - CREATE A FUNCTION revealMystery that will be invoked when you click that button. It should show something like:
 // 'The murder was committed by Jacob Green, in the living room with a rope.'
+
+function revealMystery() {
+//   hide reveal button
+// show reset button    
+  document.getElementById(
+    'mystery'
+  ).innerHTML = `It was ${mystery.killer.title} with the ${mystery.weapon.name} in the ${mystery.room.name}!`
+};
+
