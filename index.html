@@ -11,7 +11,7 @@
   <body>
     <section class="cards">
       
-      <article class="killer-deck" id="killerCard" onclick="pickKiller()">
+      <article class="killer-deck" id="killer-card" onclick="pickKiller()">
         <p>KILLER</p>
         <p id="killerTitle"></p>
         <img id="killerImg" src="" height="100" />
@@ -22,23 +22,23 @@
         <p id="killerDescription"></p>
       </article>
       
-      <article class="weapon-deck" id="weaponCard" onclick="pickWeapon()">
+      <article class="weapon-deck" id="weapon-card" onclick="pickWeapon()">
         <p>WEAPON</p>
         <p id="weaponName"></p>
-        <img id="weaponImg" src="" height="100" />
+        <img id="weaponImg" src="" height="250" />
         <p id="weaponDescription"></p>
       </article>
       
-      <article class="room-deck" id="roomCard" onclick="pickRoom()">
+      <article class="room-deck" id="room-card" onclick="pickRoom()">
         <p>ROOM</p>
         <img id="roomImg" src="" height="100" />
         <p id="roomName"></p>
       </article>
     </section>
 
-    <h1 id="mystery">here is a top level heading!</h1>
+    <h1 id="mystery"></h1>
 
-    <button id="mysteryReveal" onclick="revealMystery()">REVEAL THE CRIME</button>
+    <button id="mystery-reveal" onclick="revealMystery()">REVEAL THE CRIME</button>
 
     <script src="clue.js"></script>
   </body>
