@@ -1,59 +1,376 @@
-// STEP 1 - CREATE OBJECTS FOR ALL THE SUSPECTS, SOMETHING LIKE THIS:
-
+// Objects for Suspects
 const mrGreen = {
-  firstName: 'Jacob',
+  title: 'Mr. Green',
+  firstName: 'John',
   lastName: 'Green',
-  color: 'green',
-  description: 'He has a lot of connections',
-  age: 45,
+  color: '#668547',
+  description: 'A defrocked priest turned tycoon, he does not like people looking into his past.',
+  age: 53,
   image: 'assets/green.png',
-  occupation: 'Entrepreneur'
+  occupation: 'Businessman',
+  favoriteWeapon: 'lead pipe'
 }
 
-// CREATE OBJECTS FOR ALL THE WEAPONS, ADD MORE CHARACTERISTICS TO THE WEAPONS IF YOU LIKE.
+const profPlum = {
+  title: 'Professor Plum',
+  firstName: 'Peter',
+  lastName: 'Plum',
+  color: '#663d8f',
+  description: 'An archaeologist with a dubious reputation, he has worked on a number of mysterious cases.',
+  age: 37,
+  image: 'assets/plum.png',
+  occupation: 'Archeologist',
+  favoriteWeapon: 'poison'
+}
 
+const missScarlett = {
+  title: 'Miss Scarlett',
+  firstName: 'Josephine',
+  lastName: 'Scarlett',
+  color: '#990000',
+  description: 'Red has always been the colour of danger...',
+  age: 35,
+  image: 'assets/scarlet.png',
+  occupation: 'Madam',
+  favoriteWeapon: 'rope'
+}
+
+const mrsPeacock = {
+  title: 'Mrs. Peacock',
+  firstName: 'Patricia',
+  lastName: 'Peacock',
+  color: '#1919e6',
+  description: 'An ornithologist with a special interest in birds of prey...',
+  age: 48,
+  image: 'assets/peacock.png',
+  occupation: 'Ornithologist',
+  favoriteWeapon: 'hatPin'
+}
+
+const colMustard = {
+  title: 'Colonel Mustard',
+  firstName: 'Michael',
+  lastName: 'Mustard',
+  color: '#deac28',
+  description: 'A distinguished soldier and hero of many battles, he is also an excellent shot.',
+  age: 61,
+  image: 'assets/mustard.png',
+  occupation: 'Military',
+  favoriteWeapon: 'wrench'
+}
+
+const mrsWhite = {
+  title: 'Mrs. White',
+  firstName: 'Blanche',
+  lastName: 'White',
+  color: '#ffffff',
+  description: 'Was she looking through the keyhole at the very moment the crime took place?',
+  age: 62,
+  image: 'assets/white.png',
+  occupation: 'Cook',
+  favoriteWeapon: 'candlestick'
+}
+
+// Objects for Weapons
 const rope = {
-  name: 'rope',
-  weight: 10
+  name: 'Rope',
+  color: '#',
+  description: 'Who could have tied such a strong knot?',
+  // image: 'assets/'
 }
 
-// THE ROOMS ONLY HAS A NAME SO NO NEED FOR OBJECTS THERE.
+const knife = {
+  name: 'Knife',
+  color: '#',
+  description: 'The steel is shining as though it was recently cleaned...',
+  // image: 'assets/'
+}
 
-// NOW GROUP ALL SUSPECTS, WEAPONS AND ROOMS IN ARRAYS LIKE THIS:
+const candlestick = {
+  name: 'Candlestick',
+  color: '#',
+  description: 'Very solid brass and very, very blunt.',
+  // image: 'assets/'
+}
 
+const leadPipe = {
+  name: 'Lead Pipe',
+  color: '#',
+  description: 'Who could have struck such a blow?',
+  // image: 'assets/'
+}
+
+const poison = {
+  name: 'Poison',
+  color: '#',
+  description: 'Who broke the wax seal on the vial?',
+  // image: 'assets/'
+}
+
+const horseshoe = {
+  name: 'Horseshoe',
+  color: '#',
+  description: 'What suspect brings his own horses to the country?',
+  // image: 'assets/'
+}
+
+const hatPin = {
+  name: 'Hat Pin',
+  color: '#',
+  description: 'Small, sharp, and discreet.',
+  // image: 'assets/'
+}
+
+const wrench = {
+  name: 'Wrench',
+  color: '#',
+  description: 'Whose fingerprints are on the grip?',
+  // image: 'assets/'
+}
+
+const revolver = {
+  name: 'Revolver',
+  color: '#',
+  description: 'The mechanism seems well-oiled...',
+  // image: 'assets/'
+}
+
+// Objects for Rooms
+const hall = {
+  name: 'Hall',
+  color: '#',
+  // image: 'assets/'
+}
+
+const lounge = {
+  name: 'Lounge',
+  color: '#',
+  // image: 'assets/'
+}
+
+const diningRoom = {
+  name: 'Dining Room',
+  color: '#',
+  // image: 'assets/'
+}
+
+const kitchen = {
+  name: 'Kitchen',
+  color: '#',
+  // image: 'assets/'
+}
+
+const ballroom = {
+  name: 'Ballroom',
+  color: '#',
+  // image: 'assets/'
+}
+
+const conservatory = {
+  name: 'Conservatory',
+  color: '#',
+  // image: 'assets/'
+}
+
+const billiardRoom = {
+  name: 'Billiard Room',
+  color: '#',
+  // image: 'assets/'
+}
+
+const library = {
+  name: 'Library',
+  color: '#',
+  // image: 'assets/'
+}
+
+const study = {
+  name: 'Study',
+  color: '#',
+  // image: 'assets/'
+}
+
+const spa = {
+  name: 'Spa',
+  color: '#',
+  // image: 'assets/'
+}
+
+const observatory = {
+  name: 'Observatory',
+  color: '#',
+  // image: 'assets/'
+}
+
+const stables = {
+  name: 'Stables',
+  color: '#',
+  // image: 'assets/'
+}
+
+const guestHouse = {
+  name: 'Guest House',
+  color: '#',
+  // image: 'assets/'
+}
+
+const trophyRoom = {
+  name: 'Trophy Room',
+  color: '#',
+  // image: 'assets/'
+}
+
+const carriageHouse = {
+  name: 'Carriage House',
+  color: '#',
+  // image: 'assets/'
+}
+
+// Arrays for suspects, weapons, and rooms.
 const suspects = [
-  mrGreen,
+  mrGreen, 
+  profPlum, 
+  missScarlett, 
+  mrsPeacock, 
+  colMustard, 
   mrsWhite
-  // ...  and the rest
 ]
 
-const weapons = []
+const weapons = [
+  rope, 
+  knife, 
+  candlestick, 
+  leadPipe, 
+  poison, 
+  horseshoe, 
+  hatPin, 
+  wrench, 
+  revolver
+]
 
-const rooms = []
+const rooms = [
+  hall, 
+  lounge, 
+  diningRoom, 
+  kitchen, 
+  ballroom, 
+  conservatory, 
+  billiardRoom, 
+  library, 
+  study, 
+  spa, 
+  observatory, 
+  stables, 
+  guestHouse, 
+  trophyRoom, 
+  carriageHouse
+]
+
+
+// Testing
+// suspects.forEach((person) => {
+//   console.log(`${person.firstName} ${person.lastName} has the color ${person.color}.`);
+// });
+// weapons.forEach((weapon) => {
+//   console.log(`${weapon.name} : ${weapon.description}`);
+// });
+// rooms.forEach((room) => {
+//    console.log(`${room.name}`);
+// });
 
 // THIS FUNCTION WILL RANDOMLY SELECT ONE ITEM FROM THE ARRAY THAT YOU PASS IN TO THE FUNCTION.
-// YOU DON'T NEED TO CHANGE THIS, JUST TRY TO UNDERSTAND IT. AND HOW TO USE IT.
 const randomSelector = array => {
-  return array[Math.floor(Math.random() * array.length)]
+  return array[Math.floor(Math.random() * array.length)];
 }
 
-// CREATE AN OBJECT THAT KEEPS THE MYSTERY.
-// With a killer, a weapon and a room.
-// The values will be set later.
+// Object to hold The Mystery
+const mystery = {
+  killer: '',
+  weapon: '',
+  room: ''
+}
 
-// This function will be invoked when you click on the killer card.
+// Card Randomizer Funtions for Killer, Weapon, and Room
 const pickKiller = () => {
-  // This will randomly select a killer from the suspects. And add that to the mystery object.
   mystery.killer = randomSelector(suspects)
 
-  // This will change the background color of the card to the one connected to the chosen killer and show the full name of the killer. Feel free to add more things to show about the killer.
-  document.getElementById('killerCard').style.background = mystery.killer.color
-  document.getElementById(
-    'killerName'
-  ).innerHTML = `${mystery.killer.firstName} ${mystery.killer.lastName}`
+  const killer = document.getElementById('killer-card')
+  const killerName = document.getElementById("killerTitle")
+  const killerPic = document.getElementById("killerImg")
+  const killerFullName = document.getElementById("killerName")
+  const killerAge = document.getElementById("killerAge")
+  const killerWrk = document.getElementById("killerOccupation")
+  const killerFavWeapon = document.getElementById("killerFavWeapon")
+  const killerDescrip = document.getElementById("killerDescription")
+
+  killer.style.background = mystery.killer.color
+  killerName.innerHTML = mystery.killer.title
+  killerPic.src = mystery.killer.image
+  killerFullName.innerHTML = `AKA: ${mystery.killer.firstName} ${mystery.killer.lastName}`
+  killerAge.innerHTML = `Age: ${mystery.killer.age}`
+  killerWrk.innerHTML = `Occupation: ${mystery.killer.occupation}`
+  killerFavWeapon.innerHTML = `Favourite Weapon: ${mystery.killer.favoriteWeapon}`
+  killerDescrip.innerHTML = mystery.killer.description
 }
 
-// CREATE FUNCTIONS pickWeapon and pickRoom in a similar way.
+const pickWeapon = () => {
+  mystery.weapon = randomSelector(weapons)
+
+  const weapon = document.getElementById("weapon-card")
+  const weaponName = document.getElementById("weaponName")
+  const weaponPic = document.getElementById('weaponImg')
+  const weaponDesc = document.getElementById("weaponDescription")
+
+  weapon.style.background = mystery.weapon.color
+  weaponName.innerHTML = mystery.weapon.name
+  weaponPic.src = mystery.weapon.image
+  weaponDesc.innerHTML = mystery.weapon.description
+}
+
+const pickRoom = () => {
+  mystery.room = randomSelector(rooms)
+
+  const room = document.getElementById("room-card")
+  const rooomName = document.getElementById("roomName")
+  const roomPic = document.getElementById('roomImg')
+
+  room.style.background = mystery.room.color
+  rooomName.innerHTML = mystery.room.name
+  roomPic.src = mystery.room.image
+}
+
 
 // STEP 4 - CREATE A FUNCTION revealMystery that will be invoked when you click that button. It should show something like:
 // 'The murder was committed by Jacob Green, in the living room with a rope.'
+
+const revealMystery = () => {
+  const mysterySolution = document.getElementById("mystery")
+  mysterySolution.innerHTML = 
+  `It was ${mystery.killer.title} with the ${mystery.weapon.name} in the ${mystery.room.name}!`
+  //   hide reveal button
+  // show reset button
+}
+
+
+/*
+
+**🔵  Blue Level (Minimum Requirements)**
+- Style your page
+- Site should have three clickable cards and a clickable button.
+- You should be able to randomly pick suspects, weapons and rooms.
+- You should be able to reveal the mystery.
+
+Make sure you've committed and pushed a version of your project before starting with the intermediary and advanced goals.
+
+
+**🔴  Red Level (Intermediary Goals)**
+- Make your objects more complex :
+    - Add `favouriteWeapon` property to each suspect, indicating his favourite weapon. The value of it should be unique id, possibly name of a weapon written lowercase like `favouriteWeapon: "knife"`. Add the same value as an `id` to each weapon in weapon object like `id: "knife"`. It's very important that they have exactly the same value so later on, in **⚫  Black Level** we can compare them.
+    - Create `shuffleFavouriteWeapon` function to change favourite weapons of each person
+    - Display those properties in mystery card as an info part
+- Add loading animations which will signify that generating of a suspect, weapon and room is currently during processing. It should last couple seconds
+
+**⚫  Black Level (Advanced Goals)**
+- Make use of additional `favouriteWeapon` property created in **🔴 Red level.** Change logic behind generating weapon so it's not completely random anymore and it's more likely to draw weapon which is the favourite one of a suspect generated in previous step. You can do that by creating new array of weapon objects, where favourite weapon object occurs more than one time so probability of picking it is higher.
+- Create similar logic for relation between weapon and room - knives are more likely to be found in kitchen, candlestick in living room etc.
+*/

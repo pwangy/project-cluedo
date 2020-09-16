@@ -1,12 +1,16 @@
 body {
   margin: 0;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 p {
   margin: 1px;
   font-weight: 300;
   background-color: #fff;
+}
+
+article:hover {
+  cursor: pointer;
 }
 
 .cards {
@@ -45,6 +49,10 @@ p {
   text-align: center;
   padding-top: 30px;
   border-radius: 16px;
+}
+
+h1 {
+  text-align: center;
 }
 
 button {
