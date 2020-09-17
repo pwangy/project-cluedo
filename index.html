@@ -12,8 +12,8 @@
     <h1>Cluedo Mystery Picker</h1>
     <h3>Hosting a game of Cluedo and need help drawing up a solution?</h3> 
     <h3>Click to choose one card from each deck below.</h3>
-    <section class="cards">
-      
+    
+    <section class="card-container">  
       <article class="killer-deck" id="killer-card" onclick="pickKiller()">
         <p>KILLER</p>
         <p class="titles" id="killerTitle"></p>
@@ -41,11 +41,22 @@
       </article>
     </section>
 
-    <h2 id="mystery"></h2>
+    <section class="reveal">
+      <h2 id="mystery"></h2>
+      <button id="mystery-reveal" onclick="revealMystery()">SOLUTION</button>
+      <button id="reset" class="reset">RESET</button>
+    </section>
 
-    <button id="mystery-reveal" onclick="revealMystery()">REVEAL THE CRIME</button>
-
-    <footer>words go here!</footer>
+    <footer>
+      <div class="footer">
+        This page was made by Peggy @
+          <a href="https://blipsandclicks.com">blipsandclicks</a>
+          for educational purposes as a part of the Technigo Bootcamp 2020. Illustrations from
+          <a href="https://www.flaticon.com/">flaticon</a>.
+      </div>
+      
+      <div class="footer"><span>&#129418; | </span><img src="./technigo-logo.svg"></div>
+    </footer>
 
     <script src="./clue.js"></script>
   </body>

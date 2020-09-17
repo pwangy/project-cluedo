@@ -15,7 +15,7 @@ const profPlum = {
   title: 'Professor Plum',
   firstName: 'Peter',
   lastName: 'Plum',
-  color: '#b29cc9',
+  color: '#b2a3c2',
   description: 'An archaeologist with a dubious reputation, he has worked on a number of mysterious cases.',
   age: 37,
   image: 'assets/plum.png',
@@ -74,63 +74,63 @@ const mrsWhite = {
 // Objects for Weapons
 const rope = {
   name: 'Rope',
-  color: '#',
+  color: '#c9c99c',
   description: 'Who could have tied such a strong knot?',
   image: 'assets/rope.png'
 }
 
 const knife = {
   name: 'Knife',
-  color: '#',
+  color: '#adad85',
   description: 'The steel is shining as though it was recently cleaned...',
   image: 'assets/knife.png'
 }
 
 const candlestick = {
   name: 'Candlestick',
-  color: '#',
+  color: '#a3c2c2',
   description: 'Very solid brass and very, very blunt.',
   image: 'assets/candlestick.png'
 }
 
 const leadPipe = {
   name: 'Lead Pipe',
-  color: '#',
+  color: '#99838f',
   description: 'Who could have struck such a blow?',
   image: 'assets/leadpipe.png'
 }
 
 const poison = {
   name: 'Poison',
-  color: '#',
+  color: '#c2c2d6',
   description: 'Who broke the wax seal on the vial?',
   image: 'assets/poison.png'
 }
 
 const horseshoe = {
   name: 'Horseshoe',
-  color: '#',
+  color: '#bab2ab',
   description: 'What suspect brings his own horses to the country?',
   image: 'assets/horseshoe.png'
 }
 
 const hatPin = {
   name: 'Hat Pin',
-  color: '#',
+  color: '#a2c3a3',
   description: 'Small, sharp, and discreet.',
   image: 'assets/hatpin.png'
 }
 
 const wrench = {
   name: 'Wrench',
-  color: '#',
+  color: '#d1d194',
   description: 'Whose fingerprints are on the grip?',
   image: 'assets/wrench.png'
 }
 
 const revolver = {
   name: 'Revolver',
-  color: '#',
+  color: '#ebccad',
   description: 'The mechanism seems well-oiled...',
   image: 'assets/revolver.png'
 }
@@ -138,91 +138,91 @@ const revolver = {
 // Objects for Rooms
 const hall = {
   name: 'Hall',
-  color: '#',
+  color: '#c29970',
   image: 'assets/hall.png'
 }
 
 const lounge = {
   name: 'Lounge',
-  color: '#',
+  color: '#d19494',
   image: 'assets/lounge.png'
 }
 
 const diningRoom = {
   name: 'Dining Room',
-  color: '#',
+  color: '#669966',
   image: 'assets/diningroom.png'
 }
 
 const kitchen = {
   name: 'Kitchen',
-  color: '#',
+  color: '#dbbdcc',
   image: 'assets/kitchen.png'
 }
 
 const ballroom = {
   name: 'Ballroom',
-  color: '#',
+  color: '#bdbddb',
   image: 'assets/ballroom.png'
 }
 
 const conservatory = {
   name: 'Conservatory',
-  color: '#',
+  color: '#92b2c9',
   image: 'assets/conservatory.png'
 }
 
 const billiardRoom = {
   name: 'Billiard Room',
-  color: '#',
+  color: '#667a52',
   image: 'assets/billiardroom.png'
 }
 
 const library = {
   name: 'Library',
-  color: '#',
+  color: '#738c80',
   image: 'assets/library.png'
 }
 
 const study = {
   name: 'Study',
-  color: '#',
+  color: '#7ab8b8',
   image: 'assets/study.png'
 }
 
 const spa = {
   name: 'Spa',
-  color: '#',
+  color: '#ccd1c7',
   image: 'assets/spa.png'
 }
 
 const observatory = {
   name: 'Observatory',
-  color: '#',
+  color: '#667f99',
   image: 'assets/observatory.png'
 }
 
 const stables = {
   name: 'Stables',
-  color: '#',
+  color: '#a6a659',
   image: 'assets/stables.png'
 }
 
 const guestHouse = {
   name: 'Guest House',
-  color: '#',
+  color: '#d6c2d6',
   image: 'assets/guesthouse.png'
 }
 
 const trophyRoom = {
   name: 'Trophy Room',
-  color: '#',
+  color: '#999966',
   image: 'assets/trophyroom.png'
 }
 
 const carriageHouse = {
   name: 'Carriage House',
-  color: '#',
+  color: '#b8cce0',
   image: 'assets/carriagehouse.png '
 }
 
@@ -339,10 +339,6 @@ const pickRoom = () => {
   roomPic.src = mystery.room.image
 }
 
-
-// STEP 4 - CREATE A FUNCTION revealMystery that will be invoked when you click that button. It should show something like:
-// 'The murder was committed by Jacob Green, in the living room with a rope.'
-
 const revealMystery = () => {
   const mysterySolution = document.getElementById("mystery")
   mysterySolution.innerHTML = 
@@ -353,15 +349,6 @@ const revealMystery = () => {
 
 
 /*
-
-**🔵  Blue Level (Minimum Requirements)**
-- Style your page
-- Site should have three clickable cards and a clickable button.
-- You should be able to randomly pick suspects, weapons and rooms.
-- You should be able to reveal the mystery.
-
-Make sure you've committed and pushed a version of your project before starting with the intermediary and advanced goals.
-
 
 **🔴  Red Level (Intermediary Goals)**
 - Make your objects more complex :
