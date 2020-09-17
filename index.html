@@ -4,42 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Cluedo Mystery Picker</title>
   </head>
   
   <body>
+    <h1>Cluedo Mystery Picker</h1>
+    <h3>Hosting a game of Cluedo and need help drawing up a solution?</h3> 
+    <h3>Click to choose one card from each deck below.</h3>
     <section class="cards">
       
       <article class="killer-deck" id="killer-card" onclick="pickKiller()">
         <p>KILLER</p>
-        <p id="killerTitle"></p>
-        <img id="killerImg" src="" height="100" />
-        <p id="killerName"></p>
-        <p id="killerAge"></p>
-        <p id="killerOccupation"></p>
-        <p id="killerFavWeapon"></p>
-        <p id="killerDescription"></p>
+        <p class="titles" id="killerTitle"></p>
+        <img id="killerImg"/>
+        <div class="killer-text">
+          <p class="indent" id="killerName"></p>
+          <p class="indent" id="killerAge"></p>
+          <p class="indent" id="killerOccupation"></p>
+          <p class="indent" id="killerFavWeapon"></p>
+          <p class="indent" id="killerDescription"></p>
+        </div>
       </article>
       
       <article class="weapon-deck" id="weapon-card" onclick="pickWeapon()">
         <p>WEAPON</p>
-        <p id="weaponName"></p>
-        <img id="weaponImg" src="" height="250" />
+        <p class="titles" id="weaponName"></p>
+        <img id="weaponImg"/>
         <p id="weaponDescription"></p>
       </article>
       
       <article class="room-deck" id="room-card" onclick="pickRoom()">
         <p>ROOM</p>
-        <img id="roomImg" src="" height="100" />
-        <p id="roomName"></p>
+        <img id="roomImg"/>
+        <p class="titles" id="roomName"></p>
       </article>
     </section>
 
-    <h1 id="mystery"></h1>
+    <h2 id="mystery"></h2>
 
     <button id="mystery-reveal" onclick="revealMystery()">REVEAL THE CRIME</button>
 
-    <script src="clue.js"></script>
+    <footer>words go here!</footer>
+
+    <script src="./clue.js"></script>
   </body>
 </html>

@@ -8,67 +8,67 @@ const mrGreen = {
   age: 53,
   image: 'assets/green.png',
   occupation: 'Businessman',
-  favoriteWeapon: 'lead pipe'
+  favoriteWeapon: 'Lead Pipe'
 }
 
 const profPlum = {
   title: 'Professor Plum',
   firstName: 'Peter',
   lastName: 'Plum',
-  color: '#663d8f',
+  color: '#b29cc9',
   description: 'An archaeologist with a dubious reputation, he has worked on a number of mysterious cases.',
   age: 37,
   image: 'assets/plum.png',
   occupation: 'Archeologist',
-  favoriteWeapon: 'poison'
+  favoriteWeapon: 'Poison'
 }
 
 const missScarlett = {
   title: 'Miss Scarlett',
   firstName: 'Josephine',
   lastName: 'Scarlett',
-  color: '#990000',
+  color: '#d07474',
   description: 'Red has always been the colour of danger...',
   age: 35,
   image: 'assets/scarlet.png',
   occupation: 'Madam',
-  favoriteWeapon: 'rope'
+  favoriteWeapon: 'Rope'
 }
 
 const mrsPeacock = {
   title: 'Mrs. Peacock',
   firstName: 'Patricia',
   lastName: 'Peacock',
-  color: '#1919e6',
+  color: '#407fbf',
   description: 'An ornithologist with a special interest in birds of prey...',
   age: 48,
   image: 'assets/peacock.png',
   occupation: 'Ornithologist',
-  favoriteWeapon: 'hatPin'
+  favoriteWeapon: 'Hat Pin'
 }
 
 const colMustard = {
   title: 'Colonel Mustard',
   firstName: 'Michael',
   lastName: 'Mustard',
-  color: '#deac28',
+  color: '#eacc69',
   description: 'A distinguished soldier and hero of many battles, he is also an excellent shot.',
   age: 61,
   image: 'assets/mustard.png',
   occupation: 'Military',
-  favoriteWeapon: 'wrench'
+  favoriteWeapon: 'Wrench'
 }
 
 const mrsWhite = {
   title: 'Mrs. White',
   firstName: 'Blanche',
   lastName: 'White',
-  color: '#ffffff',
+  color: '#999',
   description: 'Was she looking through the keyhole at the very moment the crime took place?',
   age: 62,
   image: 'assets/white.png',
   occupation: 'Cook',
-  favoriteWeapon: 'candlestick'
+  favoriteWeapon: 'Candlestick'
 }
 
 // Objects for Weapons
@@ -76,154 +76,154 @@ const rope = {
   name: 'Rope',
   color: '#',
   description: 'Who could have tied such a strong knot?',
-  // image: 'assets/'
+  image: 'assets/rope.png'
 }
 
 const knife = {
   name: 'Knife',
   color: '#',
   description: 'The steel is shining as though it was recently cleaned...',
-  // image: 'assets/'
+  image: 'assets/knife.png'
 }
 
 const candlestick = {
   name: 'Candlestick',
   color: '#',
   description: 'Very solid brass and very, very blunt.',
-  // image: 'assets/'
+  image: 'assets/candlestick.png'
 }
 
 const leadPipe = {
   name: 'Lead Pipe',
   color: '#',
   description: 'Who could have struck such a blow?',
-  // image: 'assets/'
+  image: 'assets/leadpipe.png'
 }
 
 const poison = {
   name: 'Poison',
   color: '#',
   description: 'Who broke the wax seal on the vial?',
-  // image: 'assets/'
+  image: 'assets/poison.png'
 }
 
 const horseshoe = {
   name: 'Horseshoe',
   color: '#',
   description: 'What suspect brings his own horses to the country?',
-  // image: 'assets/'
+  image: 'assets/horseshoe.png'
 }
 
 const hatPin = {
   name: 'Hat Pin',
   color: '#',
   description: 'Small, sharp, and discreet.',
-  // image: 'assets/'
+  image: 'assets/hatpin.png'
 }
 
 const wrench = {
   name: 'Wrench',
   color: '#',
   description: 'Whose fingerprints are on the grip?',
-  // image: 'assets/'
+  image: 'assets/wrench.png'
 }
 
 const revolver = {
   name: 'Revolver',
   color: '#',
   description: 'The mechanism seems well-oiled...',
-  // image: 'assets/'
+  image: 'assets/revolver.png'
 }
 
 // Objects for Rooms
 const hall = {
   name: 'Hall',
   color: '#',
-  // image: 'assets/'
+  image: 'assets/hall.png'
 }
 
 const lounge = {
   name: 'Lounge',
   color: '#',
-  // image: 'assets/'
+  image: 'assets/lounge.png'
 }
 
 const diningRoom = {
   name: 'Dining Room',
   color: '#',
-  // image: 'assets/'
+  image: 'assets/diningroom.png'
 }
 
 const kitchen = {
   name: 'Kitchen',
   color: '#',
-  // image: 'assets/'
+  image: 'assets/kitchen.png'
 }
 
 const ballroom = {
   name: 'Ballroom',
   color: '#',
-  // image: 'assets/'
+  image: 'assets/ballroom.png'
 }
 
 const conservatory = {
   name: 'Conservatory',
   color: '#',
-  // image: 'assets/'
+  image: 'assets/conservatory.png'
 }
 
 const billiardRoom = {
   name: 'Billiard Room',
   color: '#',
-  // image: 'assets/'
+  image: 'assets/billiardroom.png'
 }
 
 const library = {
   name: 'Library',
   color: '#',
-  // image: 'assets/'
+  image: 'assets/library.png'
 }
 
 const study = {
   name: 'Study',
   color: '#',
-  // image: 'assets/'
+  image: 'assets/study.png'
 }
 
 const spa = {
   name: 'Spa',
   color: '#',
-  // image: 'assets/'
+  image: 'assets/spa.png'
 }
 
 const observatory = {
   name: 'Observatory',
   color: '#',
-  // image: 'assets/'
+  image: 'assets/observatory.png'
 }
 
 const stables = {
   name: 'Stables',
   color: '#',
-  // image: 'assets/'
+  image: 'assets/stables.png'
 }
 
 const guestHouse = {
   name: 'Guest House',
   color: '#',
-  // image: 'assets/'
+  image: 'assets/guesthouse.png'
 }
 
 const trophyRoom = {
   name: 'Trophy Room',
   color: '#',
-  // image: 'assets/'
+  image: 'assets/trophyroom.png'
 }
 
 const carriageHouse = {
   name: 'Carriage House',
   color: '#',
-  // image: 'assets/'
+  image: 'assets/carriagehouse.png '
 }
 
 // Arrays for suspects, weapons, and rooms.
