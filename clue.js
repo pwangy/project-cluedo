@@ -7,8 +7,7 @@ const mrGreen = {
   description: 'A defrocked priest turned tycoon, he does not like people looking into his past.',
   age: 53,
   image: 'assets/green.png',
-  occupation: 'Businessman',
-  favoriteWeapon: 'Lead Pipe'
+  occupation: 'Businessman'
 }
 
 const profPlum = {
@@ -19,8 +18,7 @@ const profPlum = {
   description: 'An archaeologist with a dubious reputation, he has worked on a number of mysterious cases.',
   age: 37,
   image: 'assets/plum.png',
-  occupation: 'Archeologist',
-  favoriteWeapon: 'Poison'
+  occupation: 'Archeologist'
 }
 
 const missScarlett = {
@@ -31,8 +29,7 @@ const missScarlett = {
   description: 'Red has always been the colour of danger...',
   age: 35,
   image: 'assets/scarlet.png',
-  occupation: 'Madam',
-  favoriteWeapon: 'Rope'
+  occupation: 'Madam'
 }
 
 const mrsPeacock = {
@@ -44,7 +41,6 @@ const mrsPeacock = {
   age: 48,
   image: 'assets/peacock.png',
   occupation: 'Ornithologist',
-  favoriteWeapon: 'Hat Pin'
 }
 
 const colMustard = {
@@ -55,8 +51,7 @@ const colMustard = {
   description: 'A distinguished soldier and hero of many battles, he is also an excellent shot.',
   age: 61,
   image: 'assets/mustard.png',
-  occupation: 'Military',
-  favoriteWeapon: 'Wrench'
+  occupation: 'Military'
 }
 
 const mrsWhite = {
@@ -67,8 +62,7 @@ const mrsWhite = {
   description: 'Was she looking through the keyhole at the very moment the crime took place?',
   age: 62,
   image: 'assets/white.png',
-  occupation: 'Cook',
-  favoriteWeapon: 'Candlestick'
+  occupation: 'Cook'
 }
 
 // Objects for Weapons
@@ -266,18 +260,6 @@ const rooms = [
   carriageHouse
 ]
 
-
-// Testing
-// suspects.forEach((person) => {
-//   console.log(`${person.firstName} ${person.lastName} has the color ${person.color}.`);
-// });
-// weapons.forEach((weapon) => {
-//   console.log(`${weapon.name} : ${weapon.description}`);
-// });
-// rooms.forEach((room) => {
-//    console.log(`${room.name}`);
-// });
-
 // THIS FUNCTION WILL RANDOMLY SELECT ONE ITEM FROM THE ARRAY THAT YOU PASS IN TO THE FUNCTION.
 const randomSelector = array => {
   return array[Math.floor(Math.random() * array.length)];
@@ -290,7 +272,7 @@ const mystery = {
   room: ''
 }
 
-// Card Randomizer Funtions for Killer, Weapon, and Room
+// Funtions to select a random Killer, Weapon, and Room to add to Mystery Object and display card.
 const pickKiller = () => {
   mystery.killer = randomSelector(suspects)
 
@@ -341,23 +323,18 @@ const pickRoom = () => {
 
 const revealMystery = () => {
   const mysterySolution = document.getElementById("mystery")
-  mysterySolution.innerHTML = 
-  `It was ${mystery.killer.title} with the ${mystery.weapon.name} in the ${mystery.room.name}!`
-  //   hide reveal button
-  // show reset button
+  const hideReveal = document.getElementById("mystery-reveal")
+  const showReset = document.getElementById("reset")
+  if (!mystery.killer || !mystery.room || !mystery.weapon){
+    mysterySolution.innerHTML = 'Please choose one card from every deck.'
+  } else {
+    mysterySolution.innerHTML = 
+    `It was ${mystery.killer.title} with the ${mystery.weapon.name} in the ${mystery.room.name}!`
+    hideReveal.style.display = "none"
+    showReset.style.display = "block"
+  }
+}  
+
+function reset() {
+  const startOver = location.reload();
 }
-
-
-/*
-
-**🔴  Red Level (Intermediary Goals)**
-- Make your objects more complex :
-    - Add `favouriteWeapon` property to each suspect, indicating his favourite weapon. The value of it should be unique id, possibly name of a weapon written lowercase like `favouriteWeapon: "knife"`. Add the same value as an `id` to each weapon in weapon object like `id: "knife"`. It's very important that they have exactly the same value so later on, in **⚫  Black Level** we can compare them.
-    - Create `shuffleFavouriteWeapon` function to change favourite weapons of each person
-    - Display those properties in mystery card as an info part
-- Add loading animations which will signify that generating of a suspect, weapon and room is currently during processing. It should last couple seconds
-
-**⚫  Black Level (Advanced Goals)**
-- Make use of additional `favouriteWeapon` property created in **🔴 Red level.** Change logic behind generating weapon so it's not completely random anymore and it's more likely to draw weapon which is the favourite one of a suspect generated in previous step. You can do that by creating new array of weapon objects, where favourite weapon object occurs more than one time so probability of picking it is higher.
-- Create similar logic for relation between weapon and room - knives are more likely to be found in kitchen, candlestick in living room etc.
-*/
