@@ -15,8 +15,8 @@ The user (who is the game leader and the one that will know all about the murder
 The focus on this project is to practice objects and arrays and also to manipulate the DOM with JavaScript.
 
 ## Approach
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Clue is a favorite of mine (more the movie than the actual game), so to me the feel of Cluedo is light-hearted and sometimes goofy. I knew I wanted the styling of the page to go in that direction and I wanted things to be cute if not a bit cartooney. Having this in mind, I chose this week to focus on working out the functions in JavaScript first. This was a good strategy since knowing that the styling bit can easily get me sidetracked. 
 
 
 ## See it live
-Link to come.
+https://pwangy-cluedo.netlify.app/
