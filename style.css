@@ -85,7 +85,6 @@ article:hover {
   background-position: 0 0, 20px 20px;
 }
 
-
 /* Reveal */
 .reveal {
   align-items: center;
@@ -120,7 +119,6 @@ footer {
   flex-direction: column;
   align-self: flex-end;
 }
-
 
 .footer {
   width: 100%;
