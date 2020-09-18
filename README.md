@@ -1,4 +1,4 @@
-# Cluedo Mystery Randomizer - Overview
+# Cluedo Mystery Picker - Overview
 Project done as a part of Technigo bootcamp. 
 
 Learning objectives:
