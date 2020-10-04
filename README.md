@@ -21,7 +21,7 @@ Clue is a favorite of mine (more the movie than the actual game), so to me the f
 
 
 ## Requirements Completed
-🔵  Blue Level (Minimum)
+🔵  Blue Level
 - Style your page
 - Site should have three clickable cards and a clickable button.
 - You should be able to randomly pick suspects, weapons and rooms.
