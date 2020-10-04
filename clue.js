@@ -267,22 +267,22 @@ const randomSelector = array => {
 
 // Object to hold The Mystery
 const mystery = {
-  killer: '',
-  weapon: '',
-  room: ''
+  killer: null,
+  weapon: null,
+  room: null
 }
 
 // Funtions to select a random Killer, Weapon, and Room to add to Mystery Object and display card.
 const pickKiller = () => {
   mystery.killer = randomSelector(suspects)
 
-  const killer = document.getElementById('killer-card')
+  const killer = document.getElementById('killerCard')
   const killerName = document.getElementById("killerTitle")
   const killerPic = document.getElementById("killerImg")
   const killerFullName = document.getElementById("killerName")
   const killerAge = document.getElementById("killerAge")
   const killerWrk = document.getElementById("killerOccupation")
-  const killerFavWeapon = document.getElementById("killerFavWeapon")
+  // const killerFavWeapon = document.getElementById("killerFavWeapon")
   const killerDescrip = document.getElementById("killerDescription")
 
   killer.style.background = mystery.killer.color
@@ -291,14 +291,14 @@ const pickKiller = () => {
   killerFullName.innerHTML = `AKA: ${mystery.killer.firstName} ${mystery.killer.lastName}`
   killerAge.innerHTML = `Age: ${mystery.killer.age}`
   killerWrk.innerHTML = `Occupation: ${mystery.killer.occupation}`
-  killerFavWeapon.innerHTML = `Favourite Weapon: ${mystery.killer.favoriteWeapon}`
+  // killerFavWeapon.innerHTML = `Favourite Weapon: ${mystery.killer.favoriteWeapon}`
   killerDescrip.innerHTML = mystery.killer.description
 }
 
 const pickWeapon = () => {
   mystery.weapon = randomSelector(weapons)
 
-  const weapon = document.getElementById("weapon-card")
+  const weapon = document.getElementById("weaponCard")
   const weaponName = document.getElementById("weaponName")
   const weaponPic = document.getElementById('weaponImg')
   const weaponDesc = document.getElementById("weaponDescription")
@@ -312,7 +312,7 @@ const pickWeapon = () => {
 const pickRoom = () => {
   mystery.room = randomSelector(rooms)
 
-  const room = document.getElementById("room-card")
+  const room = document.getElementById("roomCard")
   const rooomName = document.getElementById("roomName")
   const roomPic = document.getElementById('roomImg')
 
@@ -323,7 +323,7 @@ const pickRoom = () => {
 
 const revealMystery = () => {
   const mysterySolution = document.getElementById("mystery")
-  const hideReveal = document.getElementById("mystery-reveal")
+  const hideReveal = document.getElementById("mysteryReveal")
   const showReset = document.getElementById("reset")
   if (!mystery.killer || !mystery.room || !mystery.weapon){
     mysterySolution.innerHTML = 'Please choose one card from every deck.'
@@ -333,8 +333,4 @@ const revealMystery = () => {
     hideReveal.style.display = "none"
     showReset.style.display = "block"
   }
-}  
-
-function reset() {
-  const startOver = location.reload();
-}
+} 
