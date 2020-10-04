@@ -40,5 +40,5 @@ Clue is a favorite of mine (more the movie than the actual game), so to me the f
 - Create similar logic for relation between weapon and room - knives are more likely to be found in kitchen, candlestick in living room etc. -->
 
 
-## See it live
+## View it live
 https://pwangy-cluedo.netlify.app/
