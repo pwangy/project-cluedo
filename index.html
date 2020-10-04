@@ -14,7 +14,7 @@
     <h3>Click to choose one card from each deck below.</h3>
     
     <section class="card-container">  
-      <article class="killer-deck" id="killer-card" onclick="pickKiller()">
+      <article class="killer-deck" id="killerCard" onclick="pickKiller()">
         <p>KILLER</p>
         <p class="titles" id="killerTitle"></p>
         <img id="killerImg"/>
@@ -26,14 +26,14 @@
         </div>
       </article>
       
-      <article class="weapon-deck" id="weapon-card" onclick="pickWeapon()">
+      <article class="weapon-deck" id="weaponCard" onclick="pickWeapon()">
         <p>WEAPON</p>
         <p class="titles" id="weaponName"></p>
         <img id="weaponImg"/>
         <p id="weaponDescription"></p>
       </article>
       
-      <article class="room-deck" id="room-card" onclick="pickRoom()">
+      <article class="room-deck" id="roomCard" onclick="pickRoom()">
         <p>ROOM</p>
         <img id="roomImg"/>
         <p class="titles" id="roomName"></p>
@@ -42,15 +42,15 @@
 
     <section class="reveal">
       <h2 id="mystery"></h2>
-      <button id="mystery-reveal" onclick="revealMystery()">SOLUTION</button>
-      <button id="reset" class="reset" onclick="reset()">RESET</button>
+      <button id="mysteryReveal" onclick="revealMystery()">SOLUTION</button>
+      <button id="reset" class="reset" onclick="location.reload()">RESET</button>
     </section>
 
     <footer>
       <div class="footer">
         This page was made by Peggy @
           <a href="https://blipsandclicks.com">blipsandclicks</a>
-          for educational purposes as a part of the Technigo Bootcamp 2020. Illustrations from
+          for educational purposes as a part of Technigo Bootcamp 2020. Illustrations from
           <a href="https://www.flaticon.com/">flaticon</a>.
       </div>
 
