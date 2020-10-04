@@ -20,7 +20,7 @@ Clue is a favorite of mine (more the movie than the actual game), so to me the f
 - CSS
 
 
-## Requirements Completed
+## Completed Requirements
 🔵  Blue Level
 - Style your page
 - Site should have three clickable cards and a clickable button.
